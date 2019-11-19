@@ -1,0 +1,17 @@
+.button:nth-child(even){
+    background-color:#8cb3d9;
+}
+.button:nth-child(odd){
+    background-color:#336699;
+}
+.button{
+    color:white;
+    font-size:26px;
+    margin: 5px;
+    font-weight:bold;
+    border-radius: 8px;
+}
+
+img{
+    display:none;
+}
