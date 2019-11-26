@@ -69,7 +69,7 @@ function checkIn(letter, myword, btn){
 }
 
 // Replace blanks with correct letter
-function displayLetter(myword, letter, word){
+function displayLetter(myword, letter, word){ // by jaguar
     let display = "";
     let mywordarr = myword.split("")
     for(let i = 0; i < myword.length; i++){
