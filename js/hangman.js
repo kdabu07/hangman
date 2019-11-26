@@ -52,19 +52,16 @@ function checkIn(letter, myword, btn){
             }
         }
         if(check){
-            alert("Correct!"); //Testing only
         } else {
             score--;
             guesses += 1;
             hangmanDisplay(guesses);
             document.getElementById("guesses").innerHTML = "LIVES: " + (7 - guesses);
             document.getElementById("score").innerHTML = "SCORE: " + score;
-            alert("Wrong"); //Testing only
         }
         btn.style.display = "none";
         displayWord(displayed, desc)
         if(guesses == 7){
-            alert("YOU LOSE!! HAHA");
             initialize();
         }
     }
