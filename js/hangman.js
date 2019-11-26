@@ -22,28 +22,31 @@ function alphaButton(){
         btn.innerHTML = letter;
         btn.onclick = checkIn(letter, word, btn);
         btn.className = "button";
-        document.body.appendChild(btn);
+        document.getElementById("buttons").appendChild(btn);
     }
 }
 
 //checks if letter is inside word, increases score if it is, disables button TODO
 function checkIn(letter, myword, btn){
     return function (){
-        guesses += 1;
         let check = false;
         for(let i = 0; i < myword.length; i++){
             if(letter === myword.charAt(i)){
                 score++;
+                document.getElementById("score").innerHTML = "SCORE: " + score;
                 check = true;
             }
         }
         if(check){
-            alert("Correct!");
+            alert("Correct!"); //Testing only
             //document.getElementById("image").src = "img/nice.jpg";
             //document.getElementById("image").style.display = "inline-block";
         } else {
             score--;
-            alert("Wrong");
+            guesses += 1;
+            document.getElementById("guesses").innerHTML = "LIVES: " + (7 - guesses);
+            document.getElementById("score").innerHTML = "SCORE: " + score;
+            alert("Wrong"); //Testing only
             //document.getElementById("image").src = "img/wrong.jpg";
             //document.getElementById("image").style.display = "inline-block";
         }
@@ -61,6 +64,7 @@ function newWord(){
     return myword;
 }
 
+// displays word with spaces between each letter
 function displayWord(myword){
     let display = "";
     for(let i = 0; i < myword.length; i++){
@@ -73,6 +77,7 @@ function displayWord(myword){
     document.getElementById("display").innerHTML = display;
 }
 
+// Converts each letter in word to an _
 function hideWord(myword){
     let hide = "";
     for(let i = 0; i < myword.length; i++){
@@ -81,13 +86,21 @@ function hideWord(myword){
     return hide;
 }
 
+//initialize game
 function initialize(){
-    word = words[0];
+    word = newWord();
     displayed = hideWord(word);
     displayWord(displayed);
+    document.getElementById("buttons").innerHTML = "";
+    document.getElementById("guesses").innerHTML = "LIVES: 7";
+    document.getElementById("score").innerHTML = "SCORE: 0";
     alphaButton();
     score = 0;
     guesses = 0;
 }
+
+//TODO Check if word is complete! (possibly check if each character is now a character)
+//TODO Display letters when user guesses correctly
+//TODO ANIMATIONS AND CSS MAKE THIS S*** NICE?
 
 document.body.onload = initialize;
