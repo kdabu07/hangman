@@ -5,22 +5,21 @@
 }
 }
 body {
-    text-align: center;
     color: white;
     background-color: black;
 }
 
 .button:nth-child(even){
-    background-color:#8cb3d9;
+    background-color:firebrick;
 }
 
 .button:nth-child(odd){
-    background-color:#336699;
+    background-color:darkred;
 }
 
 .button{
     color:white;
-    font: bold 25px 'Rock Salt', cursive;
+    font: bold 30px 'Rock Salt', cursive;
     margin: 5px;
     border-radius: 8px;
     padding: 20px;
@@ -36,7 +35,7 @@ body {
 }
 
 #title {
-	font: bold 50px 'Rock Salt', cursive;
+	font: bold 70px 'Rock Salt', cursive;
 	text-shadow: -2px 0 red, 0 2px red, 2px 0 red, 0 -3px red;
 }
 
