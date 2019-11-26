@@ -30,7 +30,7 @@ function Button(letter){ //BUTTON OBJECT CONSTRUCTOR -JAGUAR
     this.button.innerHTML = letter
     this.button.onclick = checkIn(letter, word, this.button)
     this.button.className = "button"
-    document.body.appendChild(this.button)
+    document.getElementById("buttons").appendChild(this.button)
 }
 
 function alphaButton(){
