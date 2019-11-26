@@ -48,6 +48,7 @@ function checkIn(letter, myword, btn){
         } else {
             score--;
             guesses += 1;
+            hangmanDisplay(guesses);
             document.getElementById("guesses").innerHTML = "LIVES: " + (7 - guesses);
             document.getElementById("score").innerHTML = "SCORE: " + score;
             alert("Wrong"); //Testing only
@@ -102,6 +103,12 @@ function initialize(){
     alphaButton();
     score = 0;
     guesses = 0;
+    hangmanDisplay(guesses);
+}
+
+function hangmanDisplay(level){
+    let hangman = document.getElementById('hangman_display');
+    hangman.src = "img/h" + level + ".jpg"
 }
 
 //TODO Check if word is complete! (possibly check if each character is now a character)
