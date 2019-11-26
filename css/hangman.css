@@ -13,10 +13,6 @@
     padding: 20px;
 }
 
-img{
-    display:none;
-}
-
 #hangman_display{
     width: 50%;
     height: 30%;
