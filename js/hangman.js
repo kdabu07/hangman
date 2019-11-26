@@ -60,11 +60,33 @@ function checkIn(letter, myword, btn){
             document.getElementById("score").innerHTML = "SCORE: " + score;
         }
         btn.style.display = "none";
-        displayWord(displayed, desc);
+        displayLetter(displayed, letter, word);
         if(guesses == 7){
+
             initialize();
         }
     }
+}
+
+// Replace blanks with correct letter
+function displayLetter(myword, letter, word){
+    let display = "";
+    let mywordarr = myword.split("")
+    for(let i = 0; i < myword.length; i++){
+        if(i != myword.length){
+            if(letter === word.charAt(i)){
+                display = display + letter
+                //myword = myword.charAt(i) + letter
+                mywordarr[i] = letter
+            } else {
+                display += myword.charAt(i) + " ";
+            }
+        } else {
+            display += myword.charAt(i);
+        }
+    }
+    displayed = mywordarr.join("")
+    document.getElementById("display").innerHTML = display;
 }
 
 //Generates a new word
