@@ -53,6 +53,7 @@ function checkIn(letter, myword, btn){
         btn.style.display = "none";
         displayWord(displayed);
         if(guesses == 7){
+            alert("YOU LOSE!! HAHA");
             initialize();
         }
     }
