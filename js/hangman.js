@@ -60,7 +60,7 @@ function checkIn(letter, myword, btn){
             document.getElementById("score").innerHTML = "SCORE: " + score;
         }
         btn.style.display = "none";
-        displayWord(displayed, desc)
+        displayWord(displayed, desc);
         if(guesses == 7){
             initialize();
         }
