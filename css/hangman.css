@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Rock+Salt&display=swap');
 @media only screen and (max-width: 400px) {
-  #title {
+    #title {
 	  font-size: 80px;
-}
+    }
+    .button {
+	width:5%;
+    }
 }
 body {
     color: white;
