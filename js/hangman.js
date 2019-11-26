@@ -62,7 +62,7 @@ function checkIn(letter, myword, btn){
             alert("Wrong"); //Testing only
         }
         btn.style.display = "none";
-        displayWord(displayed);
+        displayWord(displayed, desc)
         if(guesses == 7){
             alert("YOU LOSE!! HAHA");
             initialize();
