@@ -116,6 +116,12 @@ function initialize(){
     guesses = 0;
     hangmanDisplay(guesses);
     selector = randomGen(0, 10);
+    resetGame();
+}
+
+function resetGame(){
+    let resetButton = document.getElementById('resetButton');
+    resetButton.onclick = initialize;
 }
 
 function hangmanDisplay(level){
