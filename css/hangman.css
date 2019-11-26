@@ -17,6 +17,11 @@ img{
     display:none;
 }
 
+#hangman_display{
+    width: 50%;
+    height: 30%;
+}
+
 #buttons{
     text-align: center;
 }
