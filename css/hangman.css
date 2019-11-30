@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Rock+Salt&display=swap');
-@media only screen and (max-width: 400px) {
+@media only screen and (min-width: 600px) {
     #title {
 	  font-size: 80px;
     }
     .button {
 	width:5%;
     }
+
 }
 body {
     color: white;
@@ -14,26 +15,27 @@ body {
 
 .button:nth-child(even){
     background-color:firebrick;
-    width: 5vw;
-    height: 10vh;
+    width: 9vw;
+    height: 7vh;
 }
 
 .button:nth-child(odd){
     background-color:darkred;
-    width: 5vw;
-    height: 10vh;
+    width: 9vw;
+    height: 7vh;
 }
 
 .button{
     color:white;
-    font: bold 2vh 'Rock Salt', cursive;
+    font: bold 1.5vh 'Rock Salt', cursive;
     margin: 5px;
     border-radius: 8px;
     padding: 20px;
 }
 
+
 #hangman_display{
-    width: 20vw;
+    width: 30%;
     height: 20vh;
 }
 
@@ -42,20 +44,20 @@ body {
 }
 
 #title {
-	font: bold 5vh 'Rock Salt', cursive;
+	font: bold 3vw 'Rock Salt', cursive;
 	text-shadow: -2px 0 red, 0 2px red, 2px 0 red, 0 -3px red;
 }
 
 #display{
-    font-size: 5vh;
+    font-size: 4vh;
 }
 
 #score{
-    font-size: 2vh
+    font-size: 2vh;
 }
 
 #guesses{
-    font-size: 2vh
+    font-size: 2vh;
 }
 
 #desc{
