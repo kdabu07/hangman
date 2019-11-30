@@ -1,5 +1,5 @@
 "use strict";
-let words = ["COMMITTEE", "CIVILIZED", "COMMUNITY", "GRAPEFRUIT", "GRIFFIN", "ORANGUTAN", "TECHNIQUE", "UNCHARTED", "ELIMINATE", "LAMBORGHINI"];
+let words = ["COMMITTEE", "CIVILIZED", "COMMUNITY", "GRAPEFRUIT", "GRIFFIN", "ORANGUTAN", "TECHNIQUE", "UNCHARTED", "ELIMINATE", "LAMBORGHINI", "TATTOO", "ELECTRICITY"];
 let description = ["A group of people appointed for a specific function, typically consisting of members of a larger group.",
     "Polite and well-mannered.",
     "a feeling of fellowship with others, as a result of sharing common attitudes, interests, and goals.",
@@ -9,12 +9,14 @@ let description = ["A group of people appointed for a specific function, typical
     "A way of carrying out a particular task",
     "An area of land or sea that is not mapped or surveyed.",
     "Completely remove or get rid of (something).",
-    "Amir's favorite car brand"];
+    "Amir's favorite car brand",
+    "A form of body modification where a design is made by inserting ink.",
+    "The set of physical phenomena associated with the presence of physichal "];
 let score = 0;
 let guesses = 0;
 let ranks = [];
 let displayed, word, desc;
-let selector = randomGen(0, 10);
+let selector = randomGen(0, 12);
 
 //TODO Display the letters within the word when guessed correctly
 // Clear previous buttons if game resets
