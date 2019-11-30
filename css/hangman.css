@@ -14,23 +14,27 @@ body {
 
 .button:nth-child(even){
     background-color:firebrick;
+    width: 5vw;
+    height: 10vh;
 }
 
 .button:nth-child(odd){
     background-color:darkred;
+    width: 5vw;
+    height: 10vh;
 }
 
 .button{
     color:white;
-    font: bold 30px 'Rock Salt', cursive;
+    font: bold 2vh 'Rock Salt', cursive;
     margin: 5px;
     border-radius: 8px;
     padding: 20px;
 }
 
 #hangman_display{
-    width: 50%;
-    height: 30%;
+    width: 20vw;
+    height: 20vh;
 }
 
 #buttons{
@@ -38,13 +42,31 @@ body {
 }
 
 #title {
-	font: bold 70px 'Rock Salt', cursive;
+	font: bold 5vh 'Rock Salt', cursive;
 	text-shadow: -2px 0 red, 0 2px red, 2px 0 red, 0 -3px red;
 }
 
 #display{
-    font-size: 48px;
+    font-size: 5vh;
+}
+
+#score{
+    font-size: 2vh
+}
+
+#guesses{
+    font-size: 2vh
+}
+
+#desc{
+    font-size: 2vh;
+}
+
+#resetButton{
+    width: 5vw;
+    height: 5vh;
 }
 
 p {
     font-size: 50px;
+}
