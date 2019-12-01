@@ -4,7 +4,10 @@
 	  font-size: 80px;
     }
     .button {
-	width:5%;
+	width:20%;
+    }
+    #buttons{
+        width:80%;
     }
 
 }
