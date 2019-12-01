@@ -15,49 +15,61 @@ body {
 
 .button:nth-child(even){
     background-color:firebrick;
-    width: 9vw;
-    height: 7vh;
+
 }
 
 .button:nth-child(odd){
     background-color:darkred;
-    width: 9vw;
-    height: 7vh;
+
 }
 
 .button{
+    text-align: center;
     color:white;
     font: bold 1.5vh 'Rock Salt', cursive;
     margin: 5px;
     border-radius: 8px;
-    padding: 20px;
+    height: 70px;
+    width: 70px;
+    padding: 15px;
+}
+.button:hover {
+    background-color: black;
 }
 
 
 #hangman_display{
     width: 30%;
-    height: 20vh;
 }
 
 #buttons{
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
+    width: 60%;
 }
 
 #title {
+    margin-top: 0;
+    padding-top: 0;
 	font: bold 3vw 'Rock Salt', cursive;
-	text-shadow: -2px 0 red, 0 2px red, 2px 0 red, 0 -3px red;
+	text-shadow: -2px 0 red, 0 2px darkred, 2px 0 red, 0 -3px red;
 }
 
 #display{
+    margin-top:1vh;
     font-size: 4vh;
+    margin-bottom: 0;
 }
 
 #score{
     font-size: 2vh;
+    margin-bottom: 0;
 }
 
 #guesses{
     font-size: 2vh;
+    margin-bottom: 0;
 }
 
 #desc{
@@ -65,10 +77,31 @@ body {
 }
 
 #resetButton{
-    width: 5vw;
-    height: 5vh;
+    display: block;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    background-color: black;
+    font-weight: 800;
+    color: white;
+}
+#resetButton:hover{
+    background-color:darkred;
+
 }
 
 p {
     font-size: 50px;
+}
+#top h1, p {
+    display: block;
+    float: left;
+    width: 33%;
+    text-align: center;
+    padding-bottom: 10%;
+}
+#middle {
+    display: inline;
+    text-align: center;
 }

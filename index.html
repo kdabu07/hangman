@@ -7,16 +7,23 @@
     </head>
     
     <body>
-        <h1 id = "title">HANGMAN</h1>
-        <div>
-            <img id = "hangman_display" src="img/h0.jpg"> 
+        <div id="top">
+            <h1 id = "title">HANGMAN</h1>
+            <p id = "score"></p>
+            <p id = "guesses"></p>
+
         </div>
-        <h2 id = "display"></h2>
-        <h3 id = "desc"></h2>
-        <p id = "score"></p>
-        <p id = "guesses"></p>
+        <div id="middle">
+            <img id = "hangman_display" src="img/h0.jpg">
+            <button type='button' id = "resetButton">Reset Button</button> 
+            <h2 id = "display"></h2>      
+            <h3 id = "desc"></h2>
+
+        </div>
+
         <div id ="buttons"></div>
-        <button type='button' id = "resetButton">Reset Button</button>
+        
+
     </body>
     <script src ="js/hangman.js"></script>
 </html>
