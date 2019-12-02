@@ -18,8 +18,6 @@ let ranks = [];
 let displayed, word, desc;
 let selector = randomGen(0, 12);
 
-//TODO Display the letters within the word when guessed correctly
-// Clear previous buttons if game resets
 
 //random number generator from min to max exclusive
 function randomGen(min, max){
@@ -42,7 +40,7 @@ function alphaButton(){
     }
 }
 
-//checks if letter is inside word, increases score if it is, disables button TODO
+//checks if letter is inside word, increases score if it is, disables button
 function checkIn(letter, myword, btn){
     return function (){
         let check = false;
@@ -63,22 +61,17 @@ function checkIn(letter, myword, btn){
         }
         btn.style.display = "none";
         displayLetter(displayed, letter, word);
-        if(guesses == 7){
-
-            initialize();
-        }
     }
 }
 
-// Replace blanks with correct letter
+// Replace blanks with correct letter and calls win condition function
 function displayLetter(myword, letter, word){ // by jaguar
     let display = "";
     let mywordarr = myword.split("")
     for(let i = 0; i < myword.length; i++){
         if(i != myword.length){
             if(letter === word.charAt(i)){
-                display = display + letter
-                //myword = myword.charAt(i) + letter
+                display = display + letter + " ";
                 mywordarr[i] = letter
             } else {
                 display += myword.charAt(i) + " ";
@@ -89,6 +82,20 @@ function displayLetter(myword, letter, word){ // by jaguar
     }
     displayed = mywordarr.join("")
     document.getElementById("display").innerHTML = display;
+    checkWincondition(display, word)
+}
+// Checks win and lose condition, prompt name, display score and hides buttons.
+function checkWincondition(display, word){ // by jaguar
+    let currentdisplay = display.split(" ")
+    currentdisplay = currentdisplay.join("")
+    console.log(currentdisplay)
+    console.log(display)
+    console.log(word)
+    if (currentdisplay == word || guesses >= 7){
+        name = prompt("Please enter your name")
+        document.getElementById("desc").innerHTML = name + ", your score is " + score
+        document.getElementById("buttons").style.display = "none"
+    }
 }
 
 //Generates a new word
@@ -139,22 +146,22 @@ function initialize(){
     score = 0;
     guesses = 0;
     hangmanDisplay(guesses);
-    selector = randomGen(0, 10);
+    selector = randomGen(0, 12);
     resetGame();
 }
 
+//reset button
 function resetGame(){
     let resetButton = document.getElementById('resetButton');
+    document.getElementById("buttons").style.display = "block";
     resetButton.onclick = initialize;
 }
 
+//display hangman image
 function hangmanDisplay(level){
     let hangman = document.getElementById('hangman_display');
     hangman.src = "img/h" + level + ".jpg"
 }
 
-//TODO Check if word is complete! (possibly check if each character is now a character)
-//TODO Display letters when user guesses correctly
-//TODO ANIMATIONS AND CSS MAKE THIS S*** NICE?
 
 document.body.onload = initialize;
