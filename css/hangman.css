@@ -1,24 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Rock+Salt&display=swap');
-@media only screen and (max-width: 600px) {
-    #title {
-	  font-size: 2vw;
-    }
 
-    #resetButton {
-        font-size: 3vw;
-    }
-    img{
-        width: 30vh;
-    }
-    .button {
-        font-size: 4vh;
-        width:5vh;
-    }
-    #buttons {
-        width: 100vw;
-    }
-
-}
 body {
     color: white;
     background-color: black;
@@ -53,8 +34,6 @@ body {
 }
 
 #buttons{
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
     width: 85vw;
 }
