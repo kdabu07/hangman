@@ -88,9 +88,6 @@ function displayLetter(myword, letter, word){ // by jaguar
 function checkWincondition(display, word){ // by jaguar
     let currentdisplay = display.split(" ")
     currentdisplay = currentdisplay.join("")
-    console.log(currentdisplay)
-    console.log(display)
-    console.log(word)
     if (currentdisplay == word || guesses >= 7){
         name = prompt("Please enter your name")
         document.getElementById("desc").innerHTML = name + ", your score is " + score
