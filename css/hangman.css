@@ -2,8 +2,8 @@
 
 @media only screen and (max-width: 600px) {
     .button {
-        font-size: 4vh;
-        width: 6vh;
+        font-size: 3vh;
+        width: 5vh;
     }
     #desc {
         font-size: 2vh;
@@ -30,8 +30,8 @@ body {
     font-weight: 700;
     font-size: 6vh;
     margin: 1px;
-    border-radius: 7px;
-    width:8vh;
+    border-radius: 6px;
+    width:7vh;
 }
 .button:hover {
     background-color: black;
