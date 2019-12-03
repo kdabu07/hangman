@@ -13,6 +13,9 @@
     .button {
         font-size: 4vw;
     }
+    #buttons {
+        width: 100vw;
+    }
 
 }
 body {
