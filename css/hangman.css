@@ -73,6 +73,7 @@ body {
     margin-right: auto;
     border-radius: 8px;
     background-color: black;
+    font-size: 2vh;
     font-weight: 700;
     color: white;
 }
