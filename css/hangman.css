@@ -11,7 +11,8 @@
         width: 50vh;
     }
     .button {
-        font-size: 4vw;
+        font-size: 4vh;
+        width:5vh;
     }
     #buttons {
         width: 100vw;
