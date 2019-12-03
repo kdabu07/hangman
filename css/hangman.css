@@ -34,12 +34,10 @@ body {
 .button{
     text-align: center;
     color:white;
-    font: bold 2vh 'Rock Salt', cursive;
+    font-weight: 700;
+    font-size: 6vh;
     margin: 5px;
     border-radius: 8px;
-    height: 10vh;
-
-    padding: 15px;
 }
 .button:hover {
     background-color: black;
