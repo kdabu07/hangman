@@ -3,16 +3,12 @@
     #title {
 	  font-size: 2vw;
     }
-    .button {
-
-        font-size: 2vh;
-    }
 
     #resetButton {
-        font-size: 2vw;
+        font-size: 7vw;
     }
     img{
-        width: 50%;
+        width: 50vh;
     }
 
 }
@@ -38,6 +34,7 @@ body {
     font-size: 6vh;
     margin: 5px;
     border-radius: 8px;
+    width:8vh;
 }
 .button:hover {
     background-color: black;
