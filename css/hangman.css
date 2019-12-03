@@ -5,9 +5,9 @@
     }
     .button {
         width:20%;
-        height: 5%;
-        width: 5%;
-        font-size: 2vh;
+        height: 2vh;
+        width: 2vh;
+        font-size: 1vh;
     }
     #button_display {
         width:50%;
