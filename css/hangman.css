@@ -5,10 +5,13 @@
     }
 
     #resetButton {
-        font-size: 7vw;
+        font-size: 5vw;
     }
     img{
         width: 50vh;
+    }
+    .button {
+        font-size: 5vw;
     }
 
 }
