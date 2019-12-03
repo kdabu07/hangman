@@ -13,7 +13,7 @@
     }
 
     #buttons{
-        width:80%;
+        width:85%;
     }
     #resetButton {
         font-size: 1vw;
@@ -58,7 +58,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    width: 60%;
+    width: 85%;
 }
 
 #title {
@@ -85,7 +85,7 @@ body {
 }
 
 #desc{
-    font-size: 2vh;
+    font-size: 3vh;
 }
 
 #resetButton{
@@ -111,7 +111,7 @@ p {
     float: left;
     width: 33%;
     text-align: center;
-    padding-bottom: 10%;
+    padding-bottom: 20px;
 }
 #middle {
     display: inline;
