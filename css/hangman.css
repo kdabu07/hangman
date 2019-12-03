@@ -8,12 +8,10 @@
         width: 1vh;
         font-size: 1vh;
     }
-    #button_display {
-        width:90vw;
-    }
+
 
     #buttons{
-        width:85%;
+        width:90vw;
     }
     #resetButton {
         font-size: 2vw;
