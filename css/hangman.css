@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Rock+Salt&display=swap');
 
+@media only screen and (max-width: 600px) {
+    .button {
+        font-size: 4vh;
+        width: 6vh;
+    }
+    #desc {
+        font-size: 2vh;
+    }
+  }
 body {
     color: white;
     background-color: black;
