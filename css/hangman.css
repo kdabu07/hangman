@@ -22,7 +22,7 @@ body {
     font-size: 6vh;
     margin: 5px;
     border-radius: 8px;
-    width:7vh;
+    width:8vh;
 }
 .button:hover {
     background-color: black;
@@ -30,7 +30,7 @@ body {
 
 
 #hangman_display{
-    width: 30vw;
+    width: 35vw;
 }
 
 #buttons{
@@ -49,17 +49,17 @@ body {
 
 #display{
     margin-top:1vh;
-    font-size: 4vh;
+    font-size: 3vh;
     margin-bottom: 0;
 }
 
 #score{
-    font-size: 2vh;
+    font-size: 3vh;
     margin-bottom: 0;
 }
 
 #guesses{
-    font-size: 2vh;
+    font-size: 3vh;
     margin-bottom: 0;
 }
 
@@ -73,7 +73,7 @@ body {
     margin-right: auto;
     border-radius: 8px;
     background-color: black;
-    font-size: 2vh;
+    font-size: 5vh;
     font-weight: 700;
     color: white;
 }
