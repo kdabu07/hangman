@@ -4,9 +4,8 @@
 	  font-size: 2vw;
     }
     .button {
-        height: 5vh;
-        width: 5vh;
-        font-size: 1vh;
+
+        font-size: 2vh;
     }
 
     #resetButton {
@@ -39,7 +38,7 @@ body {
     margin: 5px;
     border-radius: 8px;
     height: 10vh;
-    width: 10vh;
+
     padding: 15px;
 }
 .button:hover {
