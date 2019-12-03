@@ -13,7 +13,7 @@
         font-size: 2vw;
     }
     img{
-        width: 50vw;
+        width: 50%;
     }
 
 }
@@ -39,7 +39,7 @@ body {
     margin: 5px;
     border-radius: 8px;
     height: 10vh;
-    width: 10vw;
+    width: 10vh;
     padding: 15px;
 }
 .button:hover {
