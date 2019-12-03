@@ -9,7 +9,7 @@
         font-size: 1vh;
     }
     #button_display {
-        width:50%;
+        width:90vw;
     }
 
     #buttons{
@@ -54,7 +54,7 @@ body {
 
 
 #hangman_display{
-    width: 30%;
+    width: 30vw;
 }
 
 #buttons{
